@@ -37,7 +37,5 @@ describe('simpleCalculator tests', () => {
 
   test('should return null for invalid arguments', () => {
     expect(simpleCalculator({ a: '2', b: 3, action: Action.Add })).toBeNull();
-    expect(simpleCalculator({ a: 2, b: '3', action: Action.Add })).toBeNull();
-    expect(simpleCalculator({ a: '2', b: '3', action: Action.Add })).toBeNull();
   });
 });

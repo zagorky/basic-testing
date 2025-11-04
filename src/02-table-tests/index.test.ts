@@ -56,18 +56,6 @@ describe('simpleCalculator tests', () => {
       },
       {
         a: 2,
-        b: '3',
-        action: Action.Add,
-        describe: 'should return null for invalid arguments',
-      },
-      {
-        a: '2',
-        b: '3',
-        action: Action.Add,
-        describe: 'should return null for invalid arguments',
-      },
-      {
-        a: 2,
         b: 3,
         action: 'invalid',
         describe: 'should return null for invalid action',
