@@ -115,7 +115,7 @@ describe('readFileAsynchronously', () => {
   test('should call join with pathToFile', async () => {
     await readFileAsynchronously(mockPath);
 
-    expect(join).toHaveBeenCalledWith(expect.any(String), mockPath);
+    expect(join).toHaveBeenCalledWith(__dirname, mockPath);
   });
 
   test('should return null if file does not exist', async () => {
